@@ -1,32 +1,23 @@
 import styled from '@emotion/styled';
-
+export const StateBox = styled.div``;
 export const StateList = styled.ul`
   list-style: none;
-
   margin: 0 auto;
   padding: 0;
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
 
-  li {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-
-    gap: 8px;
-  }
-  li::before {
-    flex-grow: 1;
-    background-color: #000;
-  }
-  li:not(:first-of-type) {
-    margin-top: 10px;
+  :last-child {
+    padding: 20px 50px;
+    justify-content: space-between;
+    margin-top: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
 `;
-export const FeedbackList = styled.ul``;
 
-export const Name = styled.span`
-  display: inline-block;
-  order: -1;
-`;
+export const Name = styled.span``;
 
 export const State = styled.span`
   display: inline-block;

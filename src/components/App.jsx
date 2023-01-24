@@ -34,6 +34,7 @@ class App extends Component {
             onLeaveFeedback={this.addFeedback}
           ></FeedbackOptions>
         </Section>
+
         <Section title="Statistics">
           {this.countTotalFeedback() ? (
             <Statistics
